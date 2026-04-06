@@ -1,0 +1,16 @@
+{
+	"name": "@mono-example/web-vanilla",
+	"version": "1.0.0",
+	"description": "simple web vanilla",
+	"license": "ISC",
+	"author": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start:dev": "node --watch index.js"
+	},
+	"devDependencies": {
+		"@types/node": "^25.5.0",
+		"express": "^5.2.1"
+	}
+}
