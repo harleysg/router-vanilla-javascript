@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<base href="/" />
+		<title>Spa Vanilla</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/images/favicon.svg" type="image/svg+xml" sizes="any" />
+		<link rel="stylesheet" href="/css/0.reset.css" />
+		<link rel="stylesheet" href="/css/1.variables.css" />
+		<link rel="stylesheet" href="/css/2.base.css" />
+		<link rel="stylesheet" href="/css/index.css" />
+		<script defer type="module">
+			import '/components/layout.js';
+			import { App } from '/scripts/index.mjs';
+			const routes = [
+				{
+					page: 'home',
+					title: 'Home | Vanilla SPA',
+					regex: '^/$',
+					payload: async () => await import('/pages/home/index.js').then((m) => m.HomePage)
+				},
+				{
+					page: 'about',
+					title: 'About | Vanilla SPA',
+					regex: '^/about$',
+					payload: async () => await import('/pages/about/index.js').then((m) => m.AboutPage)
+				},
+				{
+					page: '404',
+					title: 'Page not found',
+					regex: '^/not-found$',
+					payload: async () => await import('/pages/404/index.js').then((m) => m.NotFoundPage)
+				}
+			];
+			new App({ appSelector: '#app', routes });
+		</script>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
+</html>
