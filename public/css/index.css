@@ -1,0 +1,8 @@
+#app {
+	display: contents;
+	height: inherit;
+}
+
+#app > main {
+	height: inherit;
+}

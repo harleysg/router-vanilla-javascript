@@ -1,0 +1,10 @@
+:root {
+	--font-size: 17px;
+	--heading-1: clamp(1.8rem, calc(1.636rem + 0.818vw), 2.75rem);
+	--heading-2: clamp(1.5rem, calc(1.364rem + 0.682vw), 2rem);
+	--heading-3: clamp(1.4rem, calc(1.273rem + 0.636vw), 1.7rem);
+	--heading-4: clamp(1.3rem, calc(1.182rem + 0.591vw), 1.5rem);
+	--heading-5: clamp(1.2rem, calc(1.091rem + 0.545vw), 1.3rem);
+	--heading-6: clamp(1.1rem, calc(1rem + 0.5vw), 1.38rem);
+	--heading-body: clamp(1rem, calc(0.909rem + 0.455vw), 1.1rem);
+}

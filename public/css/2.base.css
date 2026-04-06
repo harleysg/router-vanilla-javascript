@@ -1,0 +1,31 @@
+html {
+	height: 100%;
+	font-size: var(--font-size);
+}
+
+h1 {
+	font-size: var(--heading-1);
+}
+h2 {
+	font-size: var(--heading-2);
+}
+h3 {
+	font-size: var(--heading-3);
+}
+h4 {
+	font-size: var(--heading-4);
+}
+h5 {
+	font-size: var(--heading-5);
+}
+h6 {
+	font-size: var(--heading-6);
+}
+body {
+	font-size: var(--heading-body);
+	height: inherit;
+	line-height: 1.1;
+}
+h6 {
+	font-size: clamp(1.1rem, calc(1rem + 0.5vw), 1.38rem);
+}
