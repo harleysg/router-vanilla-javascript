@@ -17,10 +17,6 @@ A lightweight Single Page Application (SPA) built with vanilla JavaScript and Ex
 .
 ├── index.js              # Express server entry point
 ├── package.json          # Project dependencies
-├── pages/                # Page components
-│   ├── 404/
-│   ├── about/
-│   └── home/
 └── public/               # Static assets
     ├── css/              # Stylesheets
     ├── index.html        # Main HTML template
